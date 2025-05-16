@@ -44,3 +44,5 @@ build/
 
 ### 프로젝트 디렉토리 무시 ###
 order-service/mysql/
+inventory-service/mysql/
+inventory-service/docker/mysql/
