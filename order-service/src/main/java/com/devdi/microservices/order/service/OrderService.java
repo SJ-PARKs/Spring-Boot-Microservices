@@ -16,8 +16,10 @@ public class OrderService {
     private final InventoryClient inventoryClient;
 
     public void placeOrder(OrderRequest orderRequest){
-        var isProductInStock=inventoryClient.isInStock(orderRequest.skuCode(), orderRequest.quantity());
+        //1. using Mockito
+        //2. useWiremock
 
+        var isProductInStock=inventoryClient.isInStock(orderRequest.skuCode(), orderRequest.quantity());
         if (isProductInStock) {
             //map OrderRequest to Order object
             Order order = new Order();
